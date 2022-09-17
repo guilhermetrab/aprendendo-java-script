@@ -1,0 +1,24 @@
+@charset "UTF-8";
+ body{
+    background-color: rgb(107, 107, 255);
+    color: white;
+    text-align: center;
+ }
+
+ section{
+    margin: auto;
+    color: black;
+    text-align: justify;
+    background-color: white;
+    max-width: 400px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.575);
+    margin-bottom: 20px;
+    
+ }
+
+ div{
+    text-align: center;
+    padding: 30px;
+ }
