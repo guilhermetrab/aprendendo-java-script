@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style/mediaquery.css">
     <title>Menu Responsivo</title>
 </head>
-<body>
+<body onresize="tela()">
     <header>
         <nav class="bar">
             <div class="logo">
                 <h1>Logo</h1>
             </div>
 
-            <div class="list">
+            <div id="list">
                 <ul>
                     <li class="item"><a href="#" class="link">Início</a></li>
                     <li class="item"><a href="#" class="link">Projetos</a></li>
@@ -22,16 +24,16 @@
                 </ul>
             </div>
 
-            <div class="loguin-button">
+            <div id="loguinButton">
                 <button><a href="#">Entrar</a></button>
             </div>
 
-            <div class="mobile-menu-icon">
-                <button><i class="icon"></i></button>
+            <div id="menuIcon">
+                <button onclick="menushow()"><i id="icon" class="material-icons">menu</i></button>
             </div>
         </nav>
 
-        <div class="mobile-menu">
+        <div id="mobileMenu">
             <ul>
                 <li class="item"><a href="#" class="link">Início</a></li>
                 <li class="item"><a href="#" class="link">Projetos</a></li>
@@ -39,9 +41,10 @@
             </ul>
 
             <div class="loguin-button">
-                <button><a href="#">Entrar</a></button>
+                <button><a href="https://guilhermetrab.github.io/Portifolio-de-sites/" target="_blank">Entrar</a></button>
             </div>
         </div>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>

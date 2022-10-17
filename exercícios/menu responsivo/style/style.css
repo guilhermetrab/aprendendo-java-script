@@ -17,6 +17,7 @@ header{
     padding: 1.5rem 6rem;
 }
 
+
 .logo {
     display: flex;
     align-items: center;
@@ -24,14 +25,15 @@ header{
 
 .logo h1{
     color: #fff;
+    font-size: 25px;
 }
 
-.list{
+#list{
     display: flex;
     align-items: center;
 }
 
-.list ul {
+#list ul {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -41,6 +43,11 @@ header{
     margin: 0 15px;
 }
 
+.item:hover{
+    transform: translate(-3px, -3px);
+    transition: transform 0.3s, border 0.4s;
+}
+
 .link{
     text-decoration: none;
     font-size: 1.5rem;
@@ -48,14 +55,59 @@ header{
     font-weight: 400;
 }
 
-.loguin-button button {
+#loguinButton button {
     border: none;
     background-color: #0187a7;
     padding: 10px 15px;
     border-radius: 5px;
 }
 
-.loguin-button button a {
+#loguinButton button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+#menuIcon {
+    display: none;
+}
+
+#mobileMenu {
+    display: none;
+    padding: 1.5rem 4rem;
+    
+}
+
+#mobileMenu ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+#mobileMenu .item {
+    display: block;
+    padding: 1.2rem;
+}
+
+#menuIcon button{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#mobileMenu .loguin-button button {
+    width: 100%;
+    border: none;
+    background-color: #0187a7;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+#mobileMenu .loguin-button button a{
+    width: 100%;
     text-decoration: none;
     color: #fff;
     font-weight: 500;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="style/mediaquery.css">
+    
+</head>
+<body onresize="tela()">
+    <header>
+        <h1>Meu site</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">algo1</a></li>
+                <li><a href="#">algo2</a></li>
+                <li><a href="#">algo3</a></li>
+                <li><a href="#">algo4</a></li>
+            </ul>
+        </menu>    
+    
+    
+    
+    </header>
+    <main>
+        <h2>Testando algo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam expedita alias esse eius inventore assumenda voluptatem saepe dolore, aliquam, reprehenderit quis cumque. Blanditiis assumenda commodi aliquam sed, cumque quasi officia?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis sequi ducimus eum ut vero, sunt aliquam autem labore eaque dolorum voluptate! Sit amet aliquam quisquam odio eveniet libero vero. Doloribus? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim ab, dignissimos aut iusto maxime rerum tempore, error reiciendis quae vitae quibusdam ipsam beatae, sed id repudiandae vero. Asperiores, beatae sapiente.
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus aliquam similique eaque. Perferendis corrupti delectus qui harum, inventore aperiam cupiditate vitae. Eveniet, ratione dolorem. Magni debitis nesciunt quae quaerat minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, id nostrum recusandae aliquid, amet enim consequuntur eius excepturi voluptates labore reiciendis maxime, natus distinctio facilis veritatis. Optio illum repudiandae obcaecati.</p>
+    </main>
+    <script>
+        function tela(){
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu(){
+            if(itens.style.display == 'none'){
+                itens.style.display = 'block'
+            } else{
+            itens.style.display = 'none'
+            }
+        }
+    </script>
+</body>
+</html>
