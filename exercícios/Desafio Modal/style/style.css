@@ -1,0 +1,18 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.body{
+    background-color: rgba(128, 0, 128, 0.103);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao{
+    background-color: rgba(128, 0, 128, 0.699);
+    color: white;
+    
+}
